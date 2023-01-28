@@ -1,37 +1,30 @@
-# `useStreak` - a basic streak counter
+# `@jsjoeio/lor-sdk` - an SDK to easily consume the Lord of the Rings API
 
-![npm](https://img.shields.io/npm/v/use-streak)
-
-This is a basic streak counter - inspired by Duolingo - written in TypeScript and meant for the browser (uses `localStorage`).
+![npm](https://img.shields.io/npm/v/@jsjoeio/lor-sdk)
 
 ## Install
 
 ```shell
-yarn add use-streak
+yarn add @jsjoeio/lotr-sdk
 ```
 
 ```shell
-npm install use-streak
+npm install @jsjoeio/lotr-sdk
 ```
 
 ### Usage
 
 ```typescript
-import { useStreak } from "use-streak";
+import LotrSDK from "@jsjoeio/lotr-sdk";
 
-const today = new Date();
-const streak = useStreak(localStorage, today);
-// streak returns an object:
-// {
-//    currentCount: 1,
-//    lastLoginDate: "11/11/2021",
-//    startDate: "11/11/2021",
-// }
+const apiToken = process.env.LOTR_API_TOKEN
+const sdk = new LotrSDK(apiToken)
+
+sdk.getMovies() // returns array of movies
+sdk.getMovieById(id)  // returns movie
+sdk.getMovieQuote(id) // returns array of quotes from movie
+
 ```
-
-<img src="./streak-demo.png" alt="screenshot of streak demo" width="200" />
-
-[![Edit vigorous-wood-o8m7w](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vigorous-wood-o8m7w?fontsize=14&hidenavigation=1&theme=dark)
 
 ## LICENSE
 
