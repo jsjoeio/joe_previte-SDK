@@ -39,8 +39,5 @@
     "vite": "^4.0.4",
     "vitest": "^0.28.3"
   },
-  "license": "MIT",
-  "dependencies": {
-    "node-fetch": "^3.3.0"
-  }
+  "license": "MIT"
 }
