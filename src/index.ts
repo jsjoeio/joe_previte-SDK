@@ -1,5 +1,3 @@
-import fetch from "node-fetch"
-
 const API_ENDPOINT = "https://the-one-api.dev/v2"
 
 type QuotesResponse = {
@@ -39,7 +37,7 @@ type Movie = {
 }
 
 export class LotrSDK {
-  apiToken: string;
+  private apiToken: string;
 
   constructor(apiToken: string) {
     if (apiToken === "") {
