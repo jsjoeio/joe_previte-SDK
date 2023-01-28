@@ -1,18 +1,16 @@
 {
-  "name": "use-streak",
-  "version": "1.0.4",
+  "name": "@jsjoeio/lotr-sdk",
+  "version": "0.0.1",
   "author": "Joe Previte",
-  "homepage": "https://github.com/jsjoeio/use-streak",
+  "homepage": "https://github.com/jsjoeio/joe_previte-SDK",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsjoeio/use-streak"
+    "url": "https://github.com/jsjoeio/joe_previte-SDK"
   },
-  "description": "a streak counter to track your streak in days (similar to Duolingo)",
+  "description": "an SDK to easily consume the Lord of the Rings API",
   "keywords": [
     "typescript",
-    "browser",
-    "streak",
-    "duolingo"
+    "browser"
   ],
   "type": "module",
   "types": "./dist/index.d.ts",

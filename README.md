@@ -1,6 +1,6 @@
-# `@jsjoeio/lor-sdk` - an SDK to easily consume the Lord of the Rings API
+# `@jsjoeio/lotr-sdk` - an SDK to easily consume the Lord of the Rings API
 
-![npm](https://img.shields.io/npm/v/@jsjoeio/lor-sdk)
+![npm](https://img.shields.io/npm/v/@jsjoeio/lotr-sdk)
 
 ## Install
 
